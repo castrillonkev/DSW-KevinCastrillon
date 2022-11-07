@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>
+            Entendiendo HTML: Etiquetas semánticas, CSS Grid
+        </h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tema1.html">Tema 1</a></li>
+                            <li><a class="dropdown-item" href="tema2.html">Tema 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recurso1.html">Recurso 1</a></li>
+                            <li><a class="dropdown-item" href="recurso2.html">Recurso 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Evaluacion
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="evaluacion1.html">Evaluacion 1</a></li>
+                            <li><a class="dropdown-item" href="evaluacion2.html">Evaluacion 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="autor.html">Autor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="contenedor">
+        <section class="principal">
+            <article>
+                <h2> Etiquetas semánticas</h2>
+            </article>
+            <p class="texto1">
+                Las etiquetas semánticas son aquellas que dan un significado a las partes del documento, indicándonos el
+                contenido que estas poseen, permitiéndonos describir el significado del contenido, además, de permitir
+                que los documentos HTML sean más claros para los desarrolladores y para los navegadores que procesan y
+                renderizan sus informaciones.
+            </p>
+            <img src="img/img/Etiquetas semanticas.jpg" alt="Imagen que muestra etiquetas semanticas" class="img1">
+            <article>
+                <h2>¿Por qué es importante el buen uso de las etiquetas semánticas dentro de HTML?</h2>
+            </article>
+            <p class="texto1">
+                Son varias las razones de su importancia, pero podemos resumirlas en los siguientes puntos.
+                <li class="lista1">Permiten una mejor legibilidad del contenido de un documento HTML, tanto para el
+                    desarrollador, como para un indexador de contenido.</li>
+                <li class="lista1">Al momento de mejorar la legibilidad para los monitores de búsqueda, mejorará su
+                    posicionamiento.</li>
+                <li class="lista1">Permite el desarrollo de contenido escalable.</li>
+                <li class="lista1">Contenido ordenado y estructurado.</li>
+            </p>
+            <p class="texto1">
+                Con el lanzamiento de HTML5 surgieron nuevos elementos enfocados en aumentar el poder semántico y
+                estructural del lenguaje.
+                article, aside, nav, section, footer, header y main.
+            </p>
+            <p class="texto1">
+                Estos nuevos artículos como <b> main, o nav </b> describen secciones de una página de internet y los
+                nuevos
+                elementos como <b> figure o time </b> describen el tipo de contenido que poseen.
+            </p>
+            <p class="texto1">
+                Entender el significado semántico de estos nuevos elementos permite estructurar con detalle el esquema
+                del documento, lo que ayuda al lector a visualizar y entender mejor el contenido.
+            </p>
+            <h2> Elementos estructurales</h2>
+            <p class="texto1">
+                <b> header:</b> Este elemento se utiliza para agrupar las piezas de introducción del contenido.
+            </p>
+            <p class="texto1">
+                Los elementos que encontramos dentro de la cabecera o introducción de una página de Internet
+                generalmente son: Elementos de identidad o branding como el logotipo, nombre de la organización, slogan
+                y elementos de navegación del sitio.
+            </p>
+            <p class="texto1">
+                <b> nav:</b> Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo
+                en el menú principal.
+            </p>
+            <p class="texto1">
+                <b> main:</b> Utilizado para indicar el contenido más importante de la página, este nuevo elemento
+                resulta muy importante para los lectores de pantalla y dispositivos de asistencia a discapacitados. Lo
+                importante es utilizarlo para agrupar justo el contenido deseado y no agrupar aquí elementos que estén
+                fuera del tema principal de la página como, anuncios y las barras laterales.
+            </p>
+            <p class="texto1">
+                <b> article:</b> La definición de este elemento indica que se debe utilizar para agrupar contenido que
+                por sí solo tiene razón de ser y significado. Un buen ejemplo es utilizarlo en un blog para agrupar cada
+                uno de los artículos o publicaciones.
+            </p>
+            <p class="texto1">
+                <b> section:</b> Este elemento tiene un valor semántico más general y es utilizada para agrupar
+                secciones o subsecciones de contenido. El significado de que es una sección se vuelve muy personal y
+                subjetiva. Lo importante es tener consistencia en tu propia definición y uso de la elemento.
+            </p>
+            <p class="texto1">
+                <b> aside:</b> Dentro de este elemento va el contenido que está fuera del tema principal del tema
+                principal de la página,
+                por ejemplo, las barras laterales con contenido como anuncios o los artículos más populares.
+            </p>
+            <p class="texto1">
+                <b> footer:</b> El pie de página o footer generalmente contiene los avisos legales, información de
+                derechos de autor e información de contacto, por lo general también es la última sección de la página.
+            </p>
+            <h2> Elementos de contenido</h2>
+            <p class="texto1">
+                <b> figure:</b> Este elemento describe contenido de flujo con significado propio, muy utilizado para
+                describir imágenes, video, ilustraciones, diagramas, fragmentos de código, etc.
+                Por lo general este elemento viene acompañado de una leyenda con la descripción o información
+                relacionada del elemento.
+            </p>
+            <p class="texto1">
+                <b> figcaption:</b> Es el elemento que contiene la leyenda o información relevante acerca del elemento
+                <b> figure </b> antecesor.
+            </p>
+            <p class="texto1">
+                <b> video:</b> Otra etiqueta nueva en HTML5 indica y otorga funcionalidad para insertar un video con
+                controles para su playback,
+                hay 3 formatos de video están soportados por la etiqueta <b> video: </b> MP4, WebM, y Ogg.
+            </p>
+            <p class="texto1">
+                <b> audio:</b> Indica que el contenido es uno o más archivos de audio, inserta los controles e interfaz
+                para reproducir los archivos, Los formatos de archivos soportados por la etiqueta <b> audio: </b> MP3,
+                WAV y Ogg.
+            </p>
+            <p class="texto1">
+                <b> canvas:</b> Este elemento se utiliza para contener gráficos generados por código, Javascript por lo
+                general.
+            </p>
+            <p class="texto1">
+                <b> data:</b> Esta etiqueta es utilizada para entregar un valor asociado a el contenido dentro de la
+                etiqueta para ser leído por alguna aplicación o sistema, por ejemplo el valor asociado por producto.
+            </p>
+            <p class="texto1">
+                <b> mark:</b> Contiene información marcada o seleccionada, el resultado debe ser texto marcado con un
+                fondo de algún color.
+            </p>
+            <p class="texto1">
+                <b> time:</b> Contiene información de fechas, horarios o tiempo. Al formatear estas fechas, horarios o
+                tiempo con estándares legibles por máquinas, esta información puede servir para guardar información en
+                calendarios y agendar notificaciones.
+            </p>
+            <p class="texto1">
+                <b> details:</b> Este elemento representa detalles adicionales que el usuario puede ver y esconder a su
+                gusto.
+            </p>
+            <p class="texto1">
+                <b> summary:</b> Es el elemento que conforman la cabecera siempre visible del elemento <b> details </b>
+                antecesor.
+            </p>
+            <p class="texto1">
+                <b> progress:</b> Contiene información acerca del progreso de una actividad o acción.
+            </p>
+        </section>
+        <aside class="lateral">
+            <a class="twitter-timeline" data-height="450"
+                href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+    </main>
+    <footer class="pie">
+        <p class="final1">
+            Email: kscastrillonl@unadvirtual.edu.co
+            <br>
+            Skype: kevincastrillon1_2
+            <br>
+            Kevin Castrillon 18/09/2022
+        </p>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
